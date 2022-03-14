@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/666a23a548.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="logo"><img src="Capture.JPG" alt="" srcset=""></div>
+    <div class="form1">
+
+        <div class="outer">
+            <div class="inner">
+                <p>
+                    <h3><i class="fa-solid fa-triangle-exclamation"></i>Account on hold temporarily</h3>
+                    
+                    We noticed Unusual payment activity on your account and need to verify ownership of the payment
+                    method used on your most recent order.(<a style="color: #00B4D8;">Why?</a>)
+                </p>
+            </div>
+
+        </div>
+
+
+        <h2>Enter billing details</h2>
+        <p>This is required to remove hold on your account </p>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname" class="required mainform">Full Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" class="foc" id="fname" name="firstname"
+                            placeholder="Name that appears on the payment method">
+                        <span class="fa-solid fa-circle-exclamation er"></span>
+                        <i class=""></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country" class="mainform">Country/Region</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" class="foc" name="country">
+                            <option value="australia">India</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject" class="required mainform">Billing address</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" class="foc" name="subject" style="height:100px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname" class="required mainform">Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" class="foc" id="mobnum" name="mobnum">
+                    </div>
+                </div>
+
+                <hr>
+                <h2>Attach supporting document</h2>
+                <p>This can help remove your hold on your account </p>
+                <h3>Document type</h3>
+
+                <div class="details">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" id="giftcard" name="upload" value="giftcard">
+                                <label for="switch-1">Billing Statement</label>
+                            </td>
+
+                            <td>
+                                <label for="switch-1" style="color: #00B4D8;">Details <i class="fa-solid fa-angle-down"
+                                        style="color: #ccc;"></i></label>
+                                <input id="switch-1" type="radio" name="tog">
+                                <div>
+                                    <p><i class="fa-solid fa-circle-info" style="color: #00B4D8;"></i>Please ensure only
+                                        the last four
+                                        digits if the card are visible.<br>For your security,do NOT include full card or
+                                        account numbers</p>
+
+                                </div>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" id="giftcard" name="upload" value="giftcard">
+                                <label for="switch-1">Gift card for purchase</label>
+                            </td>
+
+                            <td>
+                                <label for="switch-2" style="color: #00B4D8;">Details <i class="fa-solid fa-angle-down"
+                                        style="color: #ccc;"></i></label>
+
+                                <input id="switch-2" type="radio" name="tog">
+                                <div>
+                                    <p><i class="fa-solid fa-circle-info" style="color: #00B4D8;"></i>Please ensure only
+                                        the last four
+                                        digits if the card are visible.<br>For your security,do NOT include full card or
+                                        account numbers</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <input type="radio" id="giftcard" name="upload" value="giftcard">
+                    <label for="switch-1">Gift card for purchase</label>
+                    <label class="summary">hi</label>
+                    <p>Pellentesque aliquet lacinia libero...</p>
+
+                    <label for="switch-1">SHOW 1</label>
+                    <label for="switch-2">SHOW 2</label>
+
+                    <input id="switch-1" type="radio" name="tog">
+                    <div>1 Merol Muspi...</div>
+
+                    <input id="switch-2" type="radio" name="tog">
+                    <div>2 Lorem Ipsum...</div> -->
+                </div>
+
+                <!-- </div> -->
+                <br>
+
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile"><br><br>
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
